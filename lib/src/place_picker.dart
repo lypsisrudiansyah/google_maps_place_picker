@@ -48,6 +48,7 @@ class PlacePicker extends StatefulWidget {
     this.autocompleteOffset,
     this.autocompleteRadius,
     this.autocompleteLanguage,
+    this.buttonSelectText,
     this.autocompleteComponents,
     this.autocompleteTypes,
     this.strictbounds,
@@ -92,6 +93,7 @@ class PlacePicker extends StatefulWidget {
   final num autocompleteOffset;
   final num autocompleteRadius;
   final String autocompleteLanguage;
+  final String buttonSelectText;
   final List<String> autocompleteTypes;
   final List<Component> autocompleteComponents;
   final bool strictbounds;
@@ -412,6 +414,7 @@ class _PlacePickerState extends State<PlacePicker> {
       onMapCreated: widget.onMapCreated,
       selectInitialPosition: widget.selectInitialPosition,
       language: widget.autocompleteLanguage,
+      buttonSelectText: widget.buttonSelectText,
       forceSearchOnZoomChanged: widget.forceSearchOnZoomChanged,
       hidePlaceDetailsWhenDraggingPin: widget.hidePlaceDetailsWhenDraggingPin,
       onToggleMapType: () {

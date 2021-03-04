@@ -48,6 +48,7 @@ class GoogleMapPlacePicker extends StatelessWidget {
     this.usePlaceDetailSearch,
     this.selectInitialPosition,
     this.language,
+    this.buttonSelectText = "Select here",
     this.forceSearchOnZoomChanged,
     this.hidePlaceDetailsWhenDraggingPin,
   }) : super(key: key);
@@ -75,6 +76,7 @@ class GoogleMapPlacePicker extends StatelessWidget {
   final bool selectInitialPosition;
 
   final String language;
+  final String buttonSelectText;
 
   final bool forceSearchOnZoomChanged;
   final bool hidePlaceDetailsWhenDraggingPin;
@@ -339,7 +341,8 @@ class GoogleMapPlacePicker extends StatelessWidget {
           RaisedButton(
             padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
             child: Text(
-              "Select here",
+              // "Select here",
+              buttonSelectText,
               style: TextStyle(fontSize: 16),
             ),
             shape: RoundedRectangleBorder(
